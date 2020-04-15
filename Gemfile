@@ -29,7 +29,7 @@ gem "rdoc"
 gem "rest-client", require: "rest_client"
 gem "roadie-rails"
 gem "sass-rails"
-gem "shoryuken", "~> 2.1.0", require: false
+gem "shoryuken", "~> 2.1.0", require: true 
 gem "statsd-instrument", "~> 2.3.0"
 gem "uglifier", ">= 1.0.3"
 gem "unicorn", "~> 5.5.0.1.g6836"
@@ -50,12 +50,12 @@ gem "unpwn", "~> 0.3.0"
 gem "lograge"
 
 group :development, :test do
-  gem "m", "~> 1.5", require: false
+  gem "m", "~> 1.5", require: true
   gem "pry-byebug"
-  gem "rubocop", require: false
-  gem "rubocop-rails", require: false
-  gem "rubocop-performance", require: false
-  gem "brakeman", require: false
+  gem "rubocop", require: true
+  gem "rubocop-rails", require: true
+  gem "rubocop-performance", require: true
+  gem "brakeman", require: true
   gem "toxiproxy", "~> 1.0.0"
 end
 
@@ -65,14 +65,14 @@ group :development do
 end
 
 group :test do
-  gem "minitest", require: false
+  gem "minitest", require: true
   gem "capybara", "~> 2.18"
   gem "factory_bot_rails"
   gem "launchy"
   gem "rack-test", require: "rack/test"
-  gem "mocha", require: false
+  gem "mocha", require: true
   gem "shoulda"
   gem "selenium-webdriver"
   gem "webdrivers"
-  gem "simplecov", require: false
+  gem "simplecov", require: true 
 end
